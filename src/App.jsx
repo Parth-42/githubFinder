@@ -18,19 +18,19 @@ const App = () => {
       <AlertState>
         <Router>
           <div className='App'>
-            <Navbar> </Navbar>{" "}
+            <Navbar> </Navbar>
             <div className='container'>
               <Alert />
               <Switch>
-                <Route exact path='/' component={Home} />{" "}
-                <Route exact path='/about' component={About} />{" "}
-                <Route exact path='/user/:login' component={User} />{" "}
-                <Route component={NotFound} />{" "}
-              </Switch>{" "}
-            </div>{" "}
-          </div>{" "}
-        </Router>{" "}
-      </AlertState>{" "}
+                <Route exact path='/' component={Home} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/user/:login' component={User} />
+                <Route component={NotFound} />
+              </Switch>
+            </div>
+          </div>
+        </Router>
+      </AlertState>
     </GithubState>
   );
 };
